@@ -1,0 +1,110 @@
+{% extends "web_layout/giao-vien-master.html" %}
+
+<!-- Header Block -->
+
+{% block head %}
+
+{{ super()}}
+
+{% endblock %}
+
+<!-- Content Block -->
+
+{% block content %}
+
+<!-- Start content -->
+<div class="content">
+    <div class="container-fluid">
+        <div class="card-body">
+
+            <h4 class="mt-0 header-title">Thêm mới học sinh</h4>
+            <p class="text-muted m-b-30">Thêm học sinh mới cho lớp học</p>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Id_hoc_sinh" class="form-control" id="name" placeholder="Id học sinh" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Id_hoc_sinh}}"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Mat_khau" class="form-control" id="name" placeholder="Mật khẩu" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Mat_khau}}"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Ho_va_ten" class="form-control" id="name" placeholder="Họ và tên" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Ho_va_ten}}"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Gioi_tinh" class="form-control" id="name" placeholder="Giới tính" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Gioi_tinh}}"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Dia_chi" class="form-control" id="name" placeholder="Địa chỉ" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Dia_chi}}"> 
+                </div>
+            </div>
+            <div class="row email-bar">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_email" class="form-control" id="email" placeholder="Email" type="email"
+                        required spellcheck="false" autocomplete="off" value="{{email}}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Ngay_sinh" class="form-control" id="example-date-input" placeholder="Ngày sinh" type="date"
+                        required spellcheck="false" autocomplete="off" value="{{Ngay_sinh}}"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Sdt" class="form-control" id="name" placeholder="Số điện thoại" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Sdt}}"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Sdt_ph" class="form-control" id="name" placeholder="Số điện thoại phụ huynh" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Sdt_ph}}"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Lop" class="form-control" id="name" placeholder="ID Lớp" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Lop}}"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group ">
+                    <input name="Th_Nien_khoa" class="form-control" id="name" placeholder="ID Niên khóa" type="text"
+                        required spellcheck="false" autocomplete="off" value="{{Nien_khoa}}"> 
+                </div>
+            </div>
+                <button type="submmit" class="btn btn-primary waves-effect waves-light float-right" id="btn"> Cập nhật</button>
+                <script language="javascript">
+                    var button = document.getElementById("btn");
+                    button.onclick = function() {
+                        alert("Thêm học sinh thành công")                        
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+    <!-- container-fluid -->
+</div>
+<!-- content -->
+
+{% endblock %}
+
+<!-- Script block -->
+
+{% block script %}
+
+{{ super()}}
+
+{% endblock %}

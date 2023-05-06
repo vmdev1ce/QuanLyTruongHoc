@@ -1,0 +1,76 @@
+{% extends "web_layout/trang-chu-master.html" %}    
+{% block head %}
+
+{{ super()}}
+{% block title %} Trang thông tin {% endblock %}
+
+{% endblock %}
+
+<!-- Content Block -->
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="page-title-box">
+            <div class="row align-items-center">
+
+                <div class="col-sm-6">
+                    <h4 class="page-title">Thông tin</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: black;">Lịch sử thành lập</li>
+                    </ol>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-5">
+                        <div class="card h-100">
+                            <img class="img-thumbnail card-img-top" alt="400x400" width="400"
+                                src="{{ url_for('static', filename = 'trang_chu/images/7.jpg') }}"
+                                data-holder-rendered="true" alt="Card image cap">   
+                            
+                            <div class="card-body">    
+                                <h4 class="card-title font-16 mt-0 text-center" style="color: whitesmoke;"> Hình ảnh năm 1983</h4>
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+        
+                    <div class="col-md-6 col-lg-6 col-xl-7">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p style="color:whitesmoke"><b>44 năm - xây dựng và trưởng thành</b><br />
+                                    Được thành lập từ năm 1979 theo quyết định của UBND tỉnh Vĩnh Phú, hơn 30 năm qua, trường đã chuyển qua 3 địa điểm,
+                                     cũng có thể coi đó là 3 giai đoạn trong quá trình phát triển đi lên của nhà trường. 
+                                     Vào những năm đầu thành lập trường được đặt ở xã Đồng Quế với 14 lớp học và 540 học sinh. Đến năm 1989 trường được 
+                                     chuyển về đồi Lang Giằn thuộc xã Tam Sơn, và đến năm 1999 trường lại chuyển đến khu Đồng Thậm
+                                      thuộc thị trấn Tam Sơn, huyện Sông Lô ngày nay với quy mô ngày càng được mở rộng, có thời điểm trường có tới 41 lớp 
+                                      học với 2038 học sinh. Đến nay trường đã có một cơ sở vật chất khá đầy đủ, khang trang, khuôn viên được thiết kế một 
+                                      cách khoa học, đẹp mắt có tính sư phạm với tổng diện tích trên 40000m2. Suốt 40 năm qua, ngôi trường ấy đã là nơi ươm mầm tương lai
+                                       cho hơn 10.000 học sinh, giúp họ có một vốn tri thức, vốn sống vững vàng để bước vào đời.<br />
+                                       Dù nằm ở vùng kinh tế khó khăn của tỉnh Vĩnh Phúc, nhân dân chủ yếu sống bằng nghề sản xuất nông nghiệp nhưng trường THPT Sáng Sơn tự hào
+                                        vì đã đào tạo ra nhiều thế hệ học sinh có đủ đức, tài đang cống hiến sức mình để xây dựng quê hương đất nước. Nhờ có một nền tảng vững chắc
+                                         với các thế hệ giáo viên tâm huyết, tận tụy với nghề, đặc biệt trong những năm gần đây đội ngũ cán bộ quản lý và cán bộ giáo viên ngày càng 
+                                         được trẻ hóa, rất năng động, nhiệt tình, giàu khả năng sáng tạo và có ý chí vươn lên cùng với sự cố gắng của học sinh và sự ủng hộ của các bậc 
+                                         phụ huynh trường THPT Sáng Sơn đã đạt được nhiều thành tựu.   
+                                </p>
+                            </div>
+                        </div><!-- end col -->
+                    </div>
+        
+                </div>
+            </div>
+            <!-- container-fluid -->
+        
+        </div>
+    </div>
+</div>
+                
+{% endblock %}
+
+<!-- Script block -->
+
+{% block script %}
+
+{{ super()}}
+
+{% endblock %}
