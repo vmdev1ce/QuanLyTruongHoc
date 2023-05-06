@@ -1,0 +1,13 @@
+import email-validator==1.3.0
+import Flask==2.2.2
+import Flask-Login==0.6.2
+import Flask-Mail==0.9.1
+import Flask-Migrate==4.0.0
+import Flask-MySQL==1.5.2
+import Flask-MySQLdb==1.0.1
+import Flask-SQLAlchemy==2.5.1
+import Flask-WTF==1.0.1
+import mysql-connector==2.2.9
+import SQLAlchemy==1.4.44
+import WTForms==2.3.3
+pip install Flask-Bootstrap==3.3.7.1
